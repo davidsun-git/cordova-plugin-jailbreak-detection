@@ -7,6 +7,12 @@
 #import "Cordova/CDV.h"
 #import "Cordova/CDVViewController.h"
 #import "JailbreakDetection.h"
+#import <dlfcn.h>
+#import <sys/stat.h>
+#import <netdb.h>
+#import <mach-o/dyld.h>
+
+#define FORMAT(format, ...) [NSString stringWithFormat:(format), ##__VA_ARGS__]
 
 @implementation JailbreakDetection
 
